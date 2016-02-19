@@ -17,41 +17,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tr-vj-4eB">
-                                <rect key="frame" x="266" y="28" width="68" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tr-vj-4eB">
+                                <rect key="frame" x="233.5" y="50" width="133" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="DSI-QS-DD4"/>
+                                    <constraint firstAttribute="width" constant="133" id="nsq-oo-ayM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAm-Qd-0PH">
-                                <rect key="frame" x="236" y="450" width="129" height="130"/>
+                                <rect key="frame" x="227.5" y="450" width="146" height="130"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="mwi-SJ-idd"/>
+                                    <constraint firstAttribute="height" constant="130" id="odO-gP-PUW"/>
+                                    <constraint firstAttribute="width" constant="146" id="xnt-Hu-te7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIc-Y6-uqK">
-                                <rect key="frame" x="216" y="243" width="167" height="113"/>
-                                <color key="backgroundColor" red="0.99526239652878634" green="1" blue="0.97476305959519161" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="167" id="KJS-lU-wTg"/>
-                                    <constraint firstAttribute="height" constant="113" id="vsf-SK-ZVr"/>
-                                </constraints>
-                                <state key="normal" title="Tap Me!"/>
+                                <rect key="frame" x="174.5" y="167" width="250" height="265"/>
+                                <state key="normal" backgroundImage="button_tap_deselected"/>
+                                <state key="highlighted" backgroundImage="button_tap_selected"/>
                                 <connections>
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJA-8R-c1o"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checker_top" translatesAutoresizingMaskIntoConstraints="NO" id="q2X-mW-ukV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="wbz-wV-ljW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checker_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="ing-rJ-LvS">
+                                <rect key="frame" x="0.0" y="578" width="600" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="nB2-5w-6AY"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0067950606773667932" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="3Tr-vj-4eB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="4xD-me-fOU"/>
+                            <constraint firstItem="ing-rJ-LvS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="00o-v9-Q0S"/>
+                            <constraint firstAttribute="trailing" secondItem="ing-rJ-LvS" secondAttribute="trailing" id="1w7-TT-TxD"/>
+                            <constraint firstItem="3Tr-vj-4eB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="4xD-me-fOU"/>
+                            <constraint firstAttribute="trailing" secondItem="q2X-mW-ukV" secondAttribute="trailing" id="93W-dl-XlS"/>
                             <constraint firstItem="3Tr-vj-4eB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HXg-o6-eHp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GAm-Qd-0PH" secondAttribute="bottom" constant="20" id="XuQ-jW-TPX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ing-rJ-LvS" secondAttribute="bottom" id="YoN-cH-B3N"/>
                             <constraint firstItem="GAm-Qd-0PH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ahl-LD-sLr"/>
+                            <constraint firstItem="q2X-mW-ukV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dSL-m2-3gn"/>
                             <constraint firstItem="AIc-Y6-uqK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="olF-1l-FPL"/>
+                            <constraint firstItem="q2X-mW-ukV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qgU-C6-Ta4"/>
                             <constraint firstItem="AIc-Y6-uqK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uXU-Ay-4kS"/>
                         </constraints>
                     </view>
@@ -62,6 +81,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="510" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_tap_deselected" width="250" height="265"/>
+        <image name="button_tap_selected" width="250" height="265"/>
+        <image name="checker_bottom" width="320" height="23"/>
+        <image name="checker_top" width="320" height="22"/>
+    </resources>
 </document>

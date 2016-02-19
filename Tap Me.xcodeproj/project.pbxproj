@@ -482,6 +482,7 @@
 				D68567F21C756913009C596A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D68567F31C756913009C596A /* Build configuration list for PBXNativeTarget "Tap MeTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +491,7 @@
 				D68567F51C756913009C596A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D68567F61C756913009C596A /* Build configuration list for PBXNativeTarget "Tap MeUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +500,7 @@
 				D68567F81C756913009C596A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
